@@ -40,22 +40,24 @@ __http://localhost:3000__
 ### Usage
 
 Two new custom HTML Tags are provided for the creation of this accordion:
-#### <my-accordion>
-Wrapper for a new instance of an Accordion component. Will create a definition list __<dl>__ HTML Element.
+
+#### my-accordion
+Wrapper for a new instance of an Accordion component. Will create a definition list __dl__ HTML Element.
 |     Params      |   Type   |          Description         |
 | --------------- | -------- | ---------------------------- |
 |   **_color_**   |  String  | CSS theme color. One of **red, green, blue, yellow, gray**.
 |  **_animated_** |  String  | Enable CSS transform to animate sections's expand/collapse changes. One of **true, false, 1, 0**.
-|    **_title_**  |  String  | Title of accordion. Will be displayed before all component's sections in an **<h3>** element.
+|    **_title_**  |  String  | Title of accordion. Will be displayed before all component's sections in an **h3** element.
 |  **_endpoint_** |  String  | Target URL for API REST call (GET). When this paremeter is set, ajax configuration loaded dynamically from sever will overwrite previous shown accordion's attributes.
 
-#### <my-fold>
-Wrapper for each section that we want to include into the accordion. Must be always a child node of *__<my-accordion>__* element.
-Will create a defintion title __<dt>__ and a definition description __<dd>__ HTML Elements.
+
+#### my-fold
+Wrapper for each section that we want to include into the accordion. Must be always a child node of *__my-accordion__* element.
+Will create a defintion title __dt__ and a definition description __dd__ HTML Elements.
 |     Params      |   Type   |          Description         |
 | --------------- | -------- | ---------------------------- |
-|    **_title_**  |  String  | Title of the section. Will be displayed in a **<dt>** element.
-|    **_title_**  |  String  | Content of the section. Will wrap all section's children in a **<dd>** element.
+|    **_title_**  |  String  | Title of the section. Will be displayed in a **dt** element.
+|    **_title_**  |  String  | Content of the section. Will wrap all section's children in a **dd** element.
 
 ### Usage examples
 
