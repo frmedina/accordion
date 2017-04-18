@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Title</title>
+		<script src="dist/index.bundle.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="dist/styles.css" type="text/css">
+	</head>
+	<body>
+
+		<div id="container">
+
+			<my-accordion data-endpoint="/rest/api/accordion/data-1"></my-accordion>
+
+			<my-accordion data-title="2. Accordion loaded with ajax call failed" data-endpoint="/rest/api/accordion/data-2"></my-accordion>
+
+			<my-accordion data-title="3. Animated accordion with nested accordion themes" data-animated="true">
+				<my-fold data-title="Accordion theme blue">
+					<my-accordion data-color="blue">
+						<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
+						<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
+						<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
+					</my-accordion>
+				</my-fold>
+				<my-fold data-title="Accordion theme red">
+					<my-accordion data-color="red">
+						<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
+						<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
+						<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
+					</my-accordion>
+				</my-fold>
+				<my-fold data-title="Accordion theme green">
+					<my-accordion data-color="green">
+					<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
+					<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
+					<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
+					</my-accordion>
+				</my-fold>
+				<my-fold data-title="Accordion theme yellow">
+					<my-accordion data-color="yellow">
+					<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
+					<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
+					<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
+					</my-accordion>
+				</my-fold>
+			</my-accordion>
+		</div>
+	</body>
+</html>

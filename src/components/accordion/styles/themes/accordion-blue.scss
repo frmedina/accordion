@@ -1,0 +1,27 @@
+@import '../_vars';
+
+/* Blue theme */
+
+.Accordion--blue {
+	.Accordion-fold {
+		&-title {
+			background-color: $bg-pale-blue;
+			color: #333;
+			&:hover, &.is-active:hover {
+				background-color: $bg-dark-blue;
+				border-color: $clr-dark-blue;
+				color: $clr-white;
+			}
+			&.is-active {
+				background-color: $bg-blue;
+				border-color: $clr-light-blue;
+				color: $clr-white;
+			}
+		}
+		&-description {
+			&.is-unfolded {
+				background-color: $bg-pale-blue;
+			}
+		}
+	}
+}

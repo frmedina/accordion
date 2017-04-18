@@ -1,0 +1,27 @@
+@import '../_vars';
+
+/* Default theme */
+
+.Accordion--gray {
+	.Accordion-fold {
+		&-title {
+			background-color: $bg-pale-gray;
+			color: $clr-dark-gray;
+			&:hover, &.is-active:hover {
+				color: $clr-dark-gray;
+				background-color: $bg-gray;
+				border-color: $clr-gray;
+			}
+			&.is-active {
+				color: $clr-dark-gray;
+				background-color: $bg-black;
+				border-color: $clr-pale-gray;
+			}
+		}
+		&-description {
+			&.is-unfolded {
+				background-color: $bg-pale-gray;
+			}
+		}
+	}
+}

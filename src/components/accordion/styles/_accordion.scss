@@ -1,0 +1,57 @@
+@import './_vars';
+
+my-fold {
+	display: block;
+	margin: 1rem auto;
+	overflow: hidden;
+}
+
+.Accordion {
+	display: block;
+}
+
+.Accordion-fold {
+	&-title {
+		border: 0.05rem solid $clr-black;
+		cursor: pointer;
+		padding: 0.8rem 0.4rem;
+		&:hover {
+			background-color: $bg-dark-gray;
+			color: $clr-white;
+		}
+		&.is-active {
+			color: $clr-white;
+			background-color: $bg-md-gray;
+			font-weight: bold;
+		}
+	}
+	&-description {
+		margin: 0;
+		padding: 0 1.8rem;
+		border: 0.05rem solid $clr-black;
+		background-color: $bg-white;
+		overflow: hidden;
+		max-height: 0;
+		&-text {
+			padding: 2.8rem 0;
+		}
+		&.is-unfolded {
+			max-height: 200rem;
+		}
+	}
+	&.error {
+		padding: 1.8rem;
+		background-color: $bg-pale-gray;
+		strong {
+			color: $clr-dark-red;
+		}
+	}
+}
+
+.Accordion--animated {
+	.Accordion-fold-description {
+		&.is-animated {
+			transition: max-height 0.8s ease-in-out;
+		}
+	}
+}

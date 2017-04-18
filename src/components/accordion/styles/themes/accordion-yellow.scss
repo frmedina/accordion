@@ -1,0 +1,27 @@
+@import '../_vars';
+
+/* Yellow theme */
+
+.Accordion--yellow {
+	.Accordion-fold {
+		&-title {
+			background-color: $bg-pale-yellow;
+			color: $clr-dark-gray;
+			&:hover, &.is-active:hover {
+				color: $clr-white;
+				background-color: $bg-dark-yellow;
+				border-color: $clr-dark-yellow;
+			}
+			&.is-active {
+				color: $clr-white;
+				background-color: $bg-yellow;
+				border-color: $clr-light-yellow ;
+			}
+		}
+		&-description {
+			&.is-unfolded {
+				background-color: $bg-pale-yellow;
+			}
+		}
+	}
+}

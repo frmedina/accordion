@@ -1,0 +1,34 @@
+@import './_accordion';
+@import './themes/accordion-blue';
+@import './themes/accordion-gray';
+@import './themes/accordion-green';
+@import './themes/accordion-red';
+@import './themes/accordion-yellow';
+
+
+// Global
+
+html {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	@media (max-width: 900px) {
+		font-size: 14px;
+	}
+	@media (max-width: 400px) {
+		font-size: 12px;
+	}
+}
+
+body {
+	padding: 0 1rem;
+}
+
+// Basic accordion component styles
+
+.header {
+	font-size: 1.5rem;
+}
+
+.content {
+	font-size: 1rem;
+}

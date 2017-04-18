@@ -1,0 +1,27 @@
+@import '../_vars';
+
+/* Red theme */
+
+.Accordion--red {
+	.Accordion-fold {
+		&-title {
+			background-color: $bg-pale-red;
+			color: $clr-dark-gray;
+			&:hover, &.is-active:hover {
+				color: $clr-white;
+				background-color: $bg-dark-red;
+				border-color: $clr-dark-red;
+			}
+			&.is-active {
+				color: $clr-white;
+				background-color: $bg-red;
+				border-color: $clr-light-red;
+			}
+		}
+		&-description {
+			&.is-unfolded {
+				background-color: $bg-pale-red;
+			}
+		}
+	}
+}

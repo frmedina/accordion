@@ -1,0 +1,27 @@
+@import '../_vars';
+
+/* Green theme */
+
+.Accordion--green {
+	.Accordion-fold {
+		&-title {
+			background-color: $bg-pale-green;
+			color: $clr-dark-gray;
+			&:hover, &.is-active:hover {
+				color: $clr-white;
+				background-color: $bg-dark-green;
+				border-color: $clr-dark-green;
+			}
+			&.is-active {
+				color: $clr-white;
+				background-color: $bg-green;
+				border-color: $clr-light-green;
+			}
+		}
+		&-description {
+			&.is-unfolded {
+				background-color: $bg-pale-green;
+			}
+		}
+	}
+}
