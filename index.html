@@ -8,42 +8,79 @@
 	</head>
 	<body>
 
-		<div id="container">
+		<div id="app">
 
-			<my-accordion data-endpoint="/rest/api/accordion/data-1"></my-accordion>
+			<div class="header">
+				<h1>Demo ES6 Accordion JS/CSS component</h1>
+			</div>
 
-			<my-accordion data-title="2. Accordion loaded with ajax call failed" data-endpoint="/rest/api/accordion/data-2"></my-accordion>
+			<div class="content">
+				<!-- Sample 1. Accordion with content loaded with ajax request -->
+				<my-accordion data-endpoint="/rest/api/accordion/data-1"></my-accordion>
 
-			<my-accordion data-title="3. Animated accordion with nested accordion themes" data-animated="true">
-				<my-fold data-title="Accordion theme blue">
-					<my-accordion data-color="blue">
-						<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
-						<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
-						<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
-					</my-accordion>
-				</my-fold>
-				<my-fold data-title="Accordion theme red">
-					<my-accordion data-color="red">
-						<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
-						<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
-						<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
-					</my-accordion>
-				</my-fold>
-				<my-fold data-title="Accordion theme green">
-					<my-accordion data-color="green">
-					<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
-					<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
-					<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
-					</my-accordion>
-				</my-fold>
-				<my-fold data-title="Accordion theme yellow">
-					<my-accordion data-color="yellow">
-					<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
-					<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
-					<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
-					</my-accordion>
-				</my-fold>
-			</my-accordion>
+				<!-- Sample 2. Accordion is loaded with ajax request, but target endpoint is not available -->
+				<my-accordion data-title="Sample 2. Accordion loaded with ajax call failed" data-endpoint="/rest/api/accordion/data-2"></my-accordion>
+
+				<!-- Sample 3. Accordion theme BLUE -->
+				<my-accordion data-title="Sample 3. Accordion theme BLUE" data-color="blue">
+					<my-fold data-title="Section 1" data-description="Content of section 1."></my-fold>
+					<my-fold data-title="Section 2" data-description="Content of section 2."></my-fold>
+					<my-fold data-title="Section 3" data-description="Content of section 3."></my-fold>
+				</my-accordion>
+
+				<!-- Sample 4. Accordion theme YELLOW -->
+				<my-accordion data-title="Sample 4. Accordion theme BLUE" data-color="yellow">
+					<my-fold data-title="Section 1" data-description="Content of section 1."></my-fold>
+					<my-fold data-title="Section 2" data-description="Content of section 2."></my-fold>
+					<my-fold data-title="Section 3" data-description="Content of section 3."></my-fold>
+				</my-accordion>
+
+				<!-- Sample 5. Accordion theme GREEN -->
+				<my-accordion data-title="Sample 5. Accordion theme GREEN" data-color="green">
+					<my-fold data-title="Section 1" data-description="Content of section 1."></my-fold>
+					<my-fold data-title="Section 2" data-description="Content of section 2."></my-fold>
+					<my-fold data-title="Section 3" data-description="Content of section 3."></my-fold>
+				</my-accordion>
+
+				<!-- Sample 6. Accordion theme RED -->
+				<my-accordion data-title="Sample 6. Accordion theme RED" data-color="red">
+					<my-fold data-title="Section 1" data-description="Content of section 1."></my-fold>
+					<my-fold data-title="Section 2" data-description="Content of section 2."></my-fold>
+					<my-fold data-title="Section 3" data-description="Content of section 3."></my-fold>
+				</my-accordion>
+
+				<!-- Sample 7. Nested accordion with animated expand/collapse -->
+				<my-accordion data-title="Sample 7. Nested accordion with animated expand/collapse" data-animated="true">
+					<my-fold data-title="Accordion theme blue">
+						<my-accordion data-color="blue">
+							<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
+							<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
+							<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
+						</my-accordion>
+					</my-fold>
+					<my-fold data-title="Accordion theme red">
+						<my-accordion data-color="red">
+							<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
+							<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
+							<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
+						</my-accordion>
+					</my-fold>
+					<my-fold data-title="Accordion theme green">
+						<my-accordion data-color="green">
+							<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
+							<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
+							<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
+						</my-accordion>
+					</my-fold>
+					<my-fold data-title="Accordion theme yellow">
+						<my-accordion data-color="yellow">
+							<my-fold data-title="Section 1" data-description="Section 1 content"></my-fold>
+							<my-fold data-title="Section 2" data-description="Section 2 content"></my-fold>
+							<my-fold data-title="Section 3" data-description="Section 3 content"></my-fold>
+						</my-accordion>
+					</my-fold>
+				</my-accordion>
+			</div>
 		</div>
 	</body>
 </html>

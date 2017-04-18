@@ -11,10 +11,10 @@
 html {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
-	@media (max-width: 900px) {
+	@media (max-width: 768px) {
 		font-size: 14px;
 	}
-	@media (max-width: 400px) {
+	@media (max-width: 480px) {
 		font-size: 12px;
 	}
 }
@@ -26,9 +26,13 @@ body {
 // Basic accordion component styles
 
 .header {
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 
 .content {
-	font-size: 1rem;
+	font-size: 0.8rem;
+	width: 42rem;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 }
